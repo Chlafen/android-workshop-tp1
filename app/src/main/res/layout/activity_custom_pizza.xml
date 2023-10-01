@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:theme="@style/Base.Theme.Commande_pizza"
+    android:layout_height="match_parent"
+    tools:context=".CustomPizzaActivity"
+    android:padding="20dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/logoImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/pizzaSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pizza_size"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/logoImg"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaSize">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioMaxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/maxi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioMoy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/moyenne"
+            android:checked="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioMaxi" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mini"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioMoy" />
+    </RadioGroup>
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/pizzaContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pizza_content"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkChamignon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaContent"
+        android:text="@string/champignon"/>
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkThon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkChamignon"
+        android:text="@string/thon"/>
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkFromage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkThon"
+        android:text="@string/fromage"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_pizza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:onClick="submitPizza"
+        android:text="@string/order"
+        app:cornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkFromage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

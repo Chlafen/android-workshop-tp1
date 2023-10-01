@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Commande_pizza" parent="Theme.Material3.Light">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/yellow</item>
+
+
+    </style>
+
+    <style name="Theme.Commande_pizza" parent="Base.Theme.Commande_pizza" />
+</resources>

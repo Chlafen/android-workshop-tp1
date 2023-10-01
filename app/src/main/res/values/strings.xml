@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Pizzeria</string>
+    <string name="firstname">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="address">Address</string>
+    <string name="pizza_size">Select Pizza Size</string>
+    <string name="submit">Submit</string>
+    <string name="pizza_content">Customize your pizza</string>
+    <string name="fromage">Fromage</string>
+    <string name="thon">Thon</string>
+    <string name="champignon">Champignon</string>
+    <string name="review_order">Review Order</string>
+    <string name="maxi">Maxi</string>
+    <string name="moyenne">Moyenne</string>
+    <string name="mini">Mini</string>
+    <string name="order">Order</string>
+    <string name="name">Name</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="send_email">Send Email</string>
+    <string name="order_a_pizza">Order A Pizza 😋🍕</string>
+</resources>
